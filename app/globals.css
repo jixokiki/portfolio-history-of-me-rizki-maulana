@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Parchment texture — same trick as the Jual Emas project (repeating grain image
+   over a flat colour) but generated as an inline SVG so there's no asset to ship. */
+.bg-pattern-cream {
+  position: relative;
+  background: #fbf6ea;
+}
+.bg-pattern-cream::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: theme("backgroundImage.grain");
+  background-size: 140px 140px;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  filter: sepia(0.25) brightness(1.4);
+  pointer-events: none;
+  z-index: 0;
+}
+.bg-pattern-cream > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-pattern-dark {
+  position: relative;
+  background: #1a1208;
+}
+.bg-pattern-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: theme("backgroundImage.grain");
+  background-size: 140px 140px;
+  opacity: 0.25;
+  mix-blend-mode: overlay;
+  filter: brightness(1.6);
+  pointer-events: none;
+  z-index: 0;
+}
+.bg-pattern-dark > * {
+  position: relative;
+  z-index: 1;
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #f1da9b 0%, #c9a24b 45%, #8b6b3d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+::selection {
+  background: #c9a24b;
+  color: #1a1208;
+}
+
+/* Brand marquee strip in the hero — plain CSS, no JS dependency. */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hairline rule used instead of drop-shadow cards throughout the case
+   studies / work list — quieter than a bordered rounded box. */
+.hairline {
+  border-top: 1px solid rgba(201, 162, 75, 0.28);
+}
+
+/* Duotone hover treatment for case-study photography: sepia + gold overlay
+   at rest, true colour on hover. Keeps every image feeling like one set
+   even though the source photos come from very different shoots. */
+.photo-duotone {
+  filter: grayscale(0.55) sepia(0.35) contrast(1.05);
+  transition: filter 0.5s ease;
+}
+.group:hover .photo-duotone {
+  filter: grayscale(0) sepia(0) contrast(1);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
