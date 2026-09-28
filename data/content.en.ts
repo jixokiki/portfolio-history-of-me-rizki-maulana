@@ -103,7 +103,6 @@ export const content: Content = {
       tags: ["Next.js", "Brand Identity", "3D Character", "Food Photography Direction"],
       description: [
         "Doeun's official website, a Korean BBQ restaurant in Menteng — still in beta, final menu photos are on the way, but the structure, ordering system, and brand system are already live.",
-        "Besides building the site, I also handled the visual identity: a gold emblem logo, a 3D mascot character (a chef with a signature knife), and magazine-style promo material for social media and print.",
       ],
       link: "https://doeunresto-zvnv.vercel.app/",
       linkLabel: "Open beta site",
@@ -133,7 +132,7 @@ export const content: Content = {
       role: "Fullstack Developer",
       tags: ["Next.js", "Three.js / R3F", "GSAP", "SEO"],
       description: [
-        "Complete redesign of the Jual Emas Indonesia landing page: an interactive 3D gold ring hero (React Three Fiber), a GSAP-powered \"Keramaian\" (crowd) section, a glyph portal page transition, and a daily gold price guide page.",
+        "Complete redesign as a portfolio piece of the Jual Emas Indonesia landing page: an interactive 3D gold ring hero (React Three Fiber), a GSAP-powered \"Keramaian\" (crowd) section, a glyph portal page transition, and a daily gold price guide page.",
         "Focused on performance — heavy animation kept in check to keep Largest Contentful Paint low, plus structured SEO for every branch & guide article.",
       ],
       link: "https://portfolio-redesain-jual-emas-indone.vercel.app/",
@@ -158,19 +157,6 @@ export const content: Content = {
     },
     {
       index: "04",
-      slug: "dasotbap",
-      title: "Dasotbap Rice Lab+",
-      subtitle: "Brand identity — premium rice research kitchen",
-      period: "2026",
-      role: "Brand & Logo Design",
-      tags: ["Brand Identity", "Logotype", "Illustrator"],
-      description: [
-        "Logo design for Dasotbap Rice Lab+ — combining a rice bowl & chopsticks shape with Korean lettering above it, in a warm terracotta color reflecting the rice product and research focus.",
-      ],
-      media: [{ src: "/images/dasotbap-logo.webp", alt: "Dasotbap Rice Lab+ logo" }],
-    },
-    {
-      index: "05",
       slug: "trulek",
       title: "TRULEK",
       subtitle: "Clothing brand identity",
@@ -187,7 +173,7 @@ export const content: Content = {
       ],
     },
     {
-      index: "06",
+      index: "05",
       slug: "digital-office",
       title: "Digital Office",
       subtitle: "Attendance app for Kemenhub (Ministry of Transportation)",
