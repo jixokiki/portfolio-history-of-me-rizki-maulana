@@ -27,31 +27,31 @@ Portfolio ini menampilkan karya, pengalaman, dan keahlian saya sebagai **Fullsta
 ## Fitur
 
 - **Dua bahasa (EN / KO)**: konten dipisah per bahasa dan pilihan bahasa tersimpan di browser.
-- **Animasi scroll**: efek _sticky reveal_, _sink_, dan _veil_ berbasis GSAP + ScrollTrigger, serta transisi komponen dengan Framer Motion.
+- **Animasi scroll**: efek *sticky reveal*, *sink*, dan *veil* berbasis GSAP + ScrollTrigger, serta transisi komponen dengan Framer Motion.
 - **Cincin emas 3D interaktif** di hero memakai Three.js (React Three Fiber + drei).
 - **Case study**: Doeun, Jual Emas Indonesia, LoveCoupleGames, Dasotbap, dan TRULEK.
-- **Galeri arsip** dengan filter kategori (proyek, game dev, 3D, desain grafis, tools, personal) dan _lightbox_.
+- **Galeri arsip** dengan filter kategori (proyek, game dev, 3D, desain grafis, tools, personal) dan *lightbox*.
 - **Popup & viewer CV**: bisa dilihat langsung di halaman atau diunduh sebagai PDF.
 - **Aset ringan**: gambar dalam format WebP dan video MP4 yang sudah dikompres.
 - **Responsif** dari layar ponsel sampai desktop.
 
 ## Tech Stack
 
-| Kategori    | Teknologi                                                  |
-| ----------- | ---------------------------------------------------------- |
-| Framework   | Next.js 14 (App Router), React 18                          |
-| Bahasa      | TypeScript 5 (strict mode)                                 |
-| Styling     | Tailwind CSS 3, PostCSS, Autoprefixer                      |
-| Animasi     | Framer Motion, GSAP (ScrollTrigger)                        |
-| 3D          | Three.js, `@react-three/fiber`, `@react-three/drei`        |
-| Ikon & font | lucide-react, `next/font` (Archivo Black, Fraunces, Inter) |
-| Hosting     | Vercel                                                     |
+| Kategori    | Teknologi                                                        |
+| ----------- | ---------------------------------------------------------------- |
+| Framework   | Next.js 14 (App Router), React 18                                |
+| Bahasa      | TypeScript 5 (strict mode)                                       |
+| Styling     | Tailwind CSS 3, PostCSS, Autoprefixer                            |
+| Animasi     | Framer Motion, GSAP (ScrollTrigger)                              |
+| 3D          | Three.js, `@react-three/fiber`, `@react-three/drei`              |
+| Ikon & font | lucide-react, `next/font` (Archivo Black, Fraunces, Inter)       |
+| Hosting     | Vercel                                                           |
 
 ## Memulai
 
 ### Prasyarat
 
-- **Node.js** 20 atau lebih baru (lihat [`.nvmrc`](./.nvmrc))
+- **Node.js** 22 atau lebih baru (lihat [`.nvmrc`](./.nvmrc))
 - **npm** 10 atau lebih baru
 
 ### Instalasi
@@ -72,12 +72,12 @@ Buka [http://localhost:3000](http://localhost:3000) di browser.
 
 ### Script yang tersedia
 
-| Perintah           | Fungsi                                           |
-| ------------------ | ------------------------------------------------ |
-| `npm run dev`      | Menjalankan development server                   |
-| `npm run build`    | Membuat build production                         |
-| `npm start`        | Menjalankan hasil build production               |
-| `npx tsc --noEmit` | Mengecek tipe TypeScript tanpa menghasilkan file |
+| Perintah               | Fungsi                                        |
+| ---------------------- | --------------------------------------------- |
+| `npm run dev`          | Menjalankan development server                |
+| `npm run build`        | Membuat build production                      |
+| `npm start`            | Menjalankan hasil build production            |
+| `npx tsc --noEmit`     | Mengecek tipe TypeScript tanpa menghasilkan file |
 
 > Build memakai `next/font/google`, jadi butuh koneksi internet saat `npm run build`.
 
@@ -129,10 +129,10 @@ Setiap `git push` ke branch `main` akan otomatis men-deploy ke production, dan s
 
 ## Linimasa Pengerjaan (2 Hari)
 
-| Hari       | Fokus                                                                                                                                                                                                        |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Hari | Fokus |
+| ---- | ----- |
 | **Hari 1** | Setup Next.js + TypeScript + Tailwind, design system (palet emas/parchment, tipografi), komponen UI dasar dan animasi, kompresi aset, serta section utama: Hero, About, Experience, Skills, Contact, Footer. |
-| **Hari 2** | Sistem konten dua bahasa (EN/KO), case study, galeri arsip dengan lightbox, popup dan viewer CV, penyempurnaan animasi, lalu deployment ke Vercel.                                                           |
+| **Hari 2** | Sistem konten dua bahasa (EN/KO), case study, galeri arsip dengan lightbox, popup dan viewer CV, penyempurnaan animasi, lalu deployment ke Vercel. |
 
 ## Roadmap
 
