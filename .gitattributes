@@ -1,0 +1,18 @@
+# Normalisasi line ending
+* text=auto eol=lf
+
+# Aset biner
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.mp4  binary
+*.pdf  binary
+
+# Kurangi noise di diff GitHub
+package-lock.json -diff linguist-generated
+*.obj -diff
+*.tsbuildinfo -diff
+
+# Aset tidak dihitung sebagai bahasa pemrograman repo
+public/** linguist-vendored
